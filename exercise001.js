@@ -20,17 +20,14 @@ const promise = new Promise((resolve, reject) => {
 //     console.log(`Boo. Promise rejected with response:${response} `);
 //   });
 
-
 //modifying into async and await
-// const result = await somePromiseObject;
-const getPromiseResponse = async () => {
-	/*  your function here */
-	try{
-		const response = await promise;
-		console.log(`Yay! Promise resolved with response: ${response}`);
-	}catch(error){
-		console.log(`Boo. Promise rejected with response:${error}`);
-	}
 
-}
+const getPromiseResponse = async () => {
+  try {
+    const response = await promise;
+    console.log(`Yay! Promise resolved with response: ${response}`);
+  } catch (error) {
+    console.log(`Boo. Promise rejected with response:${error}`);
+  }
+};
 getPromiseResponse();
